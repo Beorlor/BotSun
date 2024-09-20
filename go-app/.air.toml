@@ -1,0 +1,12 @@
+# go-app/.air.toml
+
+root = "."
+tmp_dir = "tmp"
+
+[build]
+cmd = "go build -o ./tmp/main ."
+bin = "tmp/main"
+full_bin = "APP_ENV=dev ./tmp/main"
+
+[log]
+time_format = "2006-01-02 15:04:05"
